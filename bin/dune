@@ -1,0 +1,4 @@
+(executable
+ (public_name prog_kiso)
+ (name main)
+ (libraries prog_kiso))
