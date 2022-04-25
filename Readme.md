@@ -36,6 +36,8 @@ OCaml | Haskell | 内容
 ## links
 
 - [utop - Man Page](https://www.mankier.com/1/utop)
+- [ocaml/setup-ocaml](https://github.com/ocaml/setup-ocaml)
+- [ocurrent/opam-dune-lint](https://github.com/ocurrent/opam-dune-lint)
 
 ### test
 
