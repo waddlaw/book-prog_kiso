@@ -21,6 +21,8 @@ $ dune build @fmt --auto-promote
 ```
 # open Prog_kiso_lib.Ch02;;
 
+# require "alcotest";;
+
 # #quit;;
 # exit 0;;
 ```
@@ -34,6 +36,7 @@ OCaml | Haskell | 内容
 ## links
 
 - [utop - Man Page](https://www.mankier.com/1/utop)
+
 ### test
 
 - [x] [janestreet/ppx_inline_test](https://github.com/janestreet/ppx_inline_test)
