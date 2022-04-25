@@ -1,2 +1,5 @@
 (library
- (name prog_kiso))
+ (name prog_kiso_lib)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test)))

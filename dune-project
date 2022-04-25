@@ -1,26 +1,19 @@
 (lang dune 3.0)
 
 (name prog_kiso)
-
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github waddlaw/book-prog_kiso))
 
-(authors "Author Name")
-
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(authors "waddlaw")
+(maintainers "waddlaw")
 
 (package
  (name prog_kiso)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+ (depends
+  ocaml
+  dune
+  (ppx_inline_test (and :with-test (>= "0.15")))
+  (alcotest (and :with-test (>= "1.5")))
+ ))

@@ -1,4 +1,4 @@
 (executable
  (public_name prog_kiso)
  (name main)
- (libraries prog_kiso))
+ (libraries prog_kiso_lib))
