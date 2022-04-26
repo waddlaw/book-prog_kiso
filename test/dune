@@ -1,3 +1,3 @@
-(tests
- (names ch02)
- (libraries alcotest prog_kiso_lib))
+(test
+ (name test)
+ (libraries prog_kiso_lib alcotest))
