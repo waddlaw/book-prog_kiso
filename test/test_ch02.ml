@@ -6,7 +6,7 @@ let ex21 () =
 
 let ex22 () =
   let open Prog_kiso_lib.Ch02 in
-  let e = epsilon_float in 
+  let e = epsilon_float in
   Alcotest.(check @@ float e) "2 * 3.14 * 10" 62.8000000000000043 ex221;
   Alcotest.(check @@ float e) "1.73 ^ 2" 2.9929 ex222;
   Alcotest.(check @@ float e) "7 / 2" 3.5 ex223
@@ -23,9 +23,10 @@ let ex24 () =
   Alcotest.(check bool) "8 mod 3 = 2" true ex243;
   Alcotest.(check bool) "3+4+5 = 4*3" true ex244
 
-let exercise = [
-  "Exercise 2.1", `Quick, ex21;
-  "Exercise 2.2", `Quick, ex22;
-  "Exercise 2.3", `Quick, ex23;
-  "Exercise 2.4", `Quick, ex24;
-]
+let exercise =
+  [
+    ("Exercise 2.1", `Quick, ex21);
+    ("Exercise 2.2", `Quick, ex22);
+    ("Exercise 2.3", `Quick, ex23);
+    ("Exercise 2.4", `Quick, ex24);
+  ]

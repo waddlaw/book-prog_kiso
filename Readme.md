@@ -4,9 +4,9 @@
 
 ```bash
 # repl
-$ dune utop lib
-$ dune utop lib -- -implicit-bindings
-$ dune utop lib -- -implicit-bindings -require alcotest
+$ dune utop src
+$ dune utop src -- -implicit-bindings
+$ dune utop src -- -implicit-bindings -require alcotest
 
 # build
 $ dune build -w
