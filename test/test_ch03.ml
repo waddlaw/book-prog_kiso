@@ -5,5 +5,4 @@ let ex31 () =
   Alcotest.(check int) "60 * 60 * 24" 86400 seconds_of_day;
   Alcotest.(check string) "茗荷谷" "茗荷谷" name
 
-let exercise =
-  [ ("Exercise 3.1", `Quick, ex31) ]
+let exercise = [ ("Exercise 3.1", `Quick, ex31) ]

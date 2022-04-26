@@ -9,7 +9,7 @@ let ex232 = "関数" ^ "型" ^ "言語"
 let ex241 = 2 > 3
 let ex242 = not (3.1415 ** 2. > 10.)
 let ex243 = 8 mod 3 = 2
-let ex244 =  3 + 4 + 5 = 4 * 3
+let ex244 = 3 + 4 + 5 = 4 * 3
 
 (* ppx_inline_test *)
 let%test _ = ex211 = -5

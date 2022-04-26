@@ -5,7 +5,8 @@ let ex41 () =
 
 let ex42 () =
   let open Prog_kiso_lib.Ch04 in
-  Alcotest.(check string) "jikoshokai OCaml" "私の名前はOCamlです" @@ jikoshokai "OCaml"
+  Alcotest.(check string) "jikoshokai OCaml" "私の名前はOCamlです"
+  @@ jikoshokai "OCaml"
 
 let ex43 () =
   let open Prog_kiso_lib.Ch04 in
