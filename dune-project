@@ -1,5 +1,4 @@
 (lang dune 3.0)
-
 (name prog_kiso)
 (generate_opam_files true)
 

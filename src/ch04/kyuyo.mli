@@ -1,0 +1,1 @@
+val kyuyo : int -> int

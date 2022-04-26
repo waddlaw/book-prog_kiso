@@ -8,7 +8,7 @@ let%test _ = positive = true
 let%test _ = seconds_of_day = 86400
 let%test _ = name = "茗荷谷"
 
-(* let ex32
+(* let ex 3.2
    = 1.0 +. e *. 2.0
    = 1.0 +. (e *. 2.0)
    = 1.0 +. (2.7182 *. 2.0)
