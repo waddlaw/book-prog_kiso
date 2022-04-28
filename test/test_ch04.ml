@@ -16,12 +16,6 @@ let ex44 () =
   let open Prog_kiso_lib.Ch04 in
   Alcotest.(check @@ float 0.01) "bmi 1.85 78.9" 23.05 @@ bmi 1.85 78.9
 
-let kyuyo () =
-  let open Ch04.Kyuyo in
-  Alcotest.(check int) "kyuyo 25" 23850 @@ kyuyo 25;
-  Alcotest.(check int) "kyuyo 28" 26700 @@ kyuyo 28;
-  Alcotest.(check int) "kyuyo 31" 29550 @@ kyuyo 31
-
 let ex46 () =
   let open Prog_kiso_lib.Ch04 in
   Alcotest.(check int) "tsuru_no_ashi 2" 4 @@ tsuru_no_ashi 2;
@@ -49,7 +43,6 @@ let exercise =
     ("Exercise 4.2", `Quick, ex42);
     ("Exercise 4.3", `Quick, ex43);
     ("Exercise 4.4", `Quick, ex44);
-    ("Kyuyo", `Quick, kyuyo);
     ("Exercise 4.6", `Quick, ex46);
     ("Exercise 4.7", `Quick, ex47);
     ("Exercise 4.8", `Quick, ex48);
