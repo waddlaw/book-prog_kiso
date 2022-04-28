@@ -16,9 +16,12 @@ let ex53 () =
 
 let ex54 () =
   let open Prog_kiso_lib.Ch05 in
-  Alcotest.(check @@ float 0.01) "a=1, b=-3, c=1" 5. @@ hanbetsushiki 1. (-3.) 1.;
-  Alcotest.(check @@ float 0.01) "a=1, b=-4, c=4" 0. @@ hanbetsushiki 1. (-4.) 4.;
-  Alcotest.(check @@ float 0.01) "a=3, b=2, c=10" (-116.) @@ hanbetsushiki 3. 2. 10.
+  Alcotest.(check @@ float 0.01) "a=1, b=-3, c=1" 5.
+  @@ hanbetsushiki 1. (-3.) 1.;
+  Alcotest.(check @@ float 0.01) "a=1, b=-4, c=4" 0.
+  @@ hanbetsushiki 1. (-4.) 4.;
+  Alcotest.(check @@ float 0.01) "a=3, b=2, c=10" (-116.)
+  @@ hanbetsushiki 3. 2. 10.
 
 let ex55 () =
   let open Prog_kiso_lib.Ch05 in
