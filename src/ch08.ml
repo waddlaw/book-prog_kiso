@@ -21,6 +21,9 @@ type person_t = {
   blood_type : string;
 }
 
+let mkPerson name height weight birth blood_type =
+  { name; height; weight; birth; blood_type }
+
 let hyoka gakusei =
   match gakusei with
   | { namae = n; tensuu = t; _ } ->
