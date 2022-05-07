@@ -44,6 +44,7 @@ let tsurukame s1 s2 =
   let n = tsuru_no_ashi s1 in
   let d = (s2 - n) / 2 in
   s1 - d
+;;
 
 let%test _ = tsurukame 8 26 = 3
 let%test _ = tsurukame 100 274 = 63

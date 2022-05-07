@@ -21,30 +21,32 @@ let jikan t = if t < 12 then "午前" else "午後"
 
 (* ex 5.3 *)
 let seiza m d =
-  if (m = 3 && 21 <= d && d <= 31) || (m = 4 && 1 <= d && d <= 19) then "おひつじ座"
-  else if (m = 4 && 20 <= d && d <= 30) || (m = 5 && 1 <= d && d <= 20) then
-    "おうし座"
-  else if (m = 5 && 21 <= d && d <= 31) || (m = 6 && 1 <= d && d <= 21) then
-    "ふたご座"
-  else if (m = 6 && 22 <= d && d <= 30) || (m = 7 && 1 <= d && d <= 22) then
-    "かに座"
-  else if (m = 7 && 23 <= d && d <= 31) || (m = 8 && 1 <= d && d <= 22) then
-    "しし座"
-  else if (m = 8 && 23 <= d && d <= 31) || (m = 9 && 1 <= d && d <= 22) then
-    "おとめ座"
-  else if (m = 9 && 23 <= d && d <= 30) || (m = 10 && 1 <= d && d <= 23) then
-    "てんびん座"
-  else if (m = 10 && 24 <= d && d <= 31) || (m = 11 && 1 <= d && d <= 22) then
-    "さそり座"
-  else if (m = 11 && 23 <= d && d <= 30) || (m = 12 && 1 <= d && d <= 21) then
-    "いて座"
-  else if (m = 12 && 22 <= d && d <= 31) || (m = 1 && 1 <= d && d <= 19) then
-    "やぎ座"
-  else if (m = 1 && 20 <= d && d <= 31) || (m = 2 && 1 <= d && d <= 18) then
-    "みずがめ座"
-  else if (m = 2 && 19 <= d && d <= 29) || (m = 3 && 1 <= d && d <= 20) then
-    "うお座"
+  if (m = 3 && 21 <= d && d <= 31) || (m = 4 && 1 <= d && d <= 19)
+  then "おひつじ座"
+  else if (m = 4 && 20 <= d && d <= 30) || (m = 5 && 1 <= d && d <= 20)
+  then "おうし座"
+  else if (m = 5 && 21 <= d && d <= 31) || (m = 6 && 1 <= d && d <= 21)
+  then "ふたご座"
+  else if (m = 6 && 22 <= d && d <= 30) || (m = 7 && 1 <= d && d <= 22)
+  then "かに座"
+  else if (m = 7 && 23 <= d && d <= 31) || (m = 8 && 1 <= d && d <= 22)
+  then "しし座"
+  else if (m = 8 && 23 <= d && d <= 31) || (m = 9 && 1 <= d && d <= 22)
+  then "おとめ座"
+  else if (m = 9 && 23 <= d && d <= 30) || (m = 10 && 1 <= d && d <= 23)
+  then "てんびん座"
+  else if (m = 10 && 24 <= d && d <= 31) || (m = 11 && 1 <= d && d <= 22)
+  then "さそり座"
+  else if (m = 11 && 23 <= d && d <= 30) || (m = 12 && 1 <= d && d <= 21)
+  then "いて座"
+  else if (m = 12 && 22 <= d && d <= 31) || (m = 1 && 1 <= d && d <= 19)
+  then "やぎ座"
+  else if (m = 1 && 20 <= d && d <= 31) || (m = 2 && 1 <= d && d <= 18)
+  then "みずがめ座"
+  else if (m = 2 && 19 <= d && d <= 29) || (m = 3 && 1 <= d && d <= 20)
+  then "うお座"
   else "入力値が不正です"
+;;
 
 let kaiteki t = 15 <= t && t <= 25
 
@@ -69,6 +71,7 @@ let hanbetsushiki a b c = (b ** 2.) -. (4. *. a *. c)
 let kai_no_kosuu a b c =
   let d = hanbetsushiki a b c in
   if d > 0. then 2 else if d = 0. then 1 else 0
+;;
 
 (* ex 5.6 *)
 let kyosuukai a b c = kai_no_kosuu a b c = 0
@@ -77,7 +80,5 @@ let kyosuukai a b c = kai_no_kosuu a b c = 0
 let taikei m kg =
   let open Ch04 in
   let v = bmi m kg in
-  if v < 18.5 then "やせ"
-  else if v < 25.0 then "標準"
-  else if v < 30.0 then "肥満"
-  else "高度肥満"
+  if v < 18.5 then "やせ" else if v < 25.0 then "標準" else if v < 30.0 then "肥満" else "高度肥満"
+;;
