@@ -4,14 +4,14 @@ let goukei_to_heikin kokugo sugaku eigo rika syakai =
   let heikin = float_of_int goukei /. 5. in
   (goukei, heikin)
 
-let add pair = match pair with
-  (a,b) -> a+b
+let add pair = match pair with a, b -> a + b
 
 let%test _ = add (0, 0) = 0
 let%test _ = add (3, 5) = 8
 let%test _ = add (3, -5) = -2
 
 let add2 a b = a + b
+
 let%test _ = add2 3 5 = 8
 
 (* ex 7.2 *)
